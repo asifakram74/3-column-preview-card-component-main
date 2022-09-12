@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+/* ......... Glooble Tags ................ */
+.box-1,
+.box-2,
+.box-3h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 30px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    width: 209px;
+}
+
+/* ............. section and container ................ */
+.mySection {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 62%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* ................ content ................... */
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.box-1 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 48px;
+    display: grid;
+    gap: 26px;
+}
+
+.border {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.box-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.box-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btn-1 {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid white;
+    color: hsl(31, 77%, 52%);
+    margin: 3.6rem 0 0 0;
+    padding: 12px;
+    border-radius: 50px;
+    width: 70%;
+    font-size: 15px;
+}
+
+.btn-2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-1:hover {
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-3:hover {
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ................. media query ............. */
+@media screen and (max-width: 375px) {
+    .mySection {
+        height: unset;
+        padding: 20px;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box-1 {
+        display: grid;
+        gap: 10px;
+    }
+
+    .border {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .box-3 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .btn-1 {
+        margin: 2rem 0 0 0;
+    }
+}
+
+/* .................................................... */
